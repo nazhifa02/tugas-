@@ -1,0 +1,31 @@
+package main
+
+import "fmt"
+
+func ArrayMerge(arrayA, arrayB []string) []string {
+  //menggabungkan 2 array 
+  merged := append (arrayA, arrayB.....)
+  //Membuat array kosong
+  rsult :=make([]string,0)
+  //membuat map kosong
+  isExist := make(map[string]bool)
+
+  //mengisi array yang kosong menggunakan array yang sudah digabung
+  for _,input := range merged {
+	// jika map kosong ,maka map akan di isi dengan nilai true
+	if !isEisr[input] {
+		isExist[input]= true 
+	// mengisi array yang kosong menggunakan nilai dari array yang sdah digabung tadi
+	result = append(result,input)
+  }
+}
+return result
+}
+func main() {
+	fmt.Println(ArrayMerge([]string{"king", "devil jin", "akuma"}, []string{"eddie", "steve", "geese"}))
+	fmt.Println(ArrayMerge([]string{"sergei", "jin"}, []string{"jin", "steve", "bryan"}))
+	fmt.Println(ArrayMerge([]string{"alisa", "youshimitsu"}, []string{"devil jin", "yoshimistu", "alisa", "law"}))
+	fmt.Println(ArrayMerge([]string{}, []string{"devil jin", "sergei"}))
+	fmt.Println(ArrayMerge([]string{"hwoarang"}, []string{}))
+	fmt.Println(ArrayMerge([]string{}, []string{}))
+}
